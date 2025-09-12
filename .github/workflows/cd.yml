@@ -19,11 +19,8 @@ jobs:
       - name: Build notely
         run: ./scripts/buildprod.sh
 
-jobs:
-  job_id:
-    permissions:
-      contents: 'read'
-      id-token: 'write'
+  gcloud:
+    name: gcloud
 
     steps:
     - id: 'auth'
