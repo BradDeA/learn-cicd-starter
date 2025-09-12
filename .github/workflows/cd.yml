@@ -21,7 +21,8 @@ jobs:
 
   gcloud:
     name: gcloud
-
+    runs-on: ubuntu-latest
+    
     steps:
     - id: 'auth'
       uses: 'google-github-actions/auth@v2'
